@@ -1,0 +1,1005 @@
+Resolving dependencies...
+Downloading packages...
+  async 2.13.0 (2.13.1 available)
+  badges 3.1.2 (3.2.0 available)
+  clock 1.1.2 (1.1.3 available)
+  code_assets 1.0.0 (2.0.0 available)
+  cross_file 0.3.5+2 (0.3.5+5 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  dev_build 1.1.4 (1.1.8+3 available)
+  file_selector_linux 0.9.4 (0.9.4+1 available)
+  file_selector_macos 0.9.5 (0.9.5+1 available)
+  file_selector_windows 0.9.3+5 (0.9.3+6 available)
+  flutter_plugin_android_lifecycle 2.0.33 (2.0.35 available)
+  flutter_slidable 3.1.2 (4.0.3 available)
+  glob 2.1.3 (2.2.0 available)
+  hooks 1.0.1 (2.2.0 available)
+  image_cropper 8.1.0 (12.2.1 available)
+  image_cropper_for_web 6.1.0 (7.0.0 available)
+  image_cropper_platform_interface 7.2.0 (8.0.0 available)
+  image_picker 1.2.1 (1.2.3 available)
+  image_picker_android 0.8.13+14 (0.8.13+21 available)
+  image_picker_ios 0.8.13+6 (0.8.13+7 available)
+  intl 0.19.0 (0.20.3 available)
+  matcher 0.12.18 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.17.0 (1.19.0 available)
+  mime 2.0.0 (2.1.0 available)
+  native_toolchain_c 0.17.4 (0.19.4 available)
+  objective_c 9.3.0 (9.6.0 available)
+  path_provider 2.1.5 (2.1.6 available)
+  path_provider_android 2.2.22 (2.3.1 available)
+  path_provider_linux 2.2.1 (2.2.2 available)
+  path_provider_platform_interface 2.1.2 (2.1.3 available)
+  pool 1.5.2 (1.5.3 available)
+  process_run 1.3.1+1 (1.3.5 available)
+  pub_semver 2.2.0 (2.2.1 available)
+  share_plus 10.1.4 (13.3.0 available)
+  share_plus_platform_interface 5.0.2 (7.2.0 available)
+  shared_preferences_android 2.4.23 (2.4.28 available)
+  shared_preferences_foundation 2.5.6 (2.5.7 available)
+  shimmer 3.0.0 (4.0.0 available)
+  sqflite 2.4.2 (2.4.3 available)
+  sqflite_android 2.4.2+2 (2.4.3 available)
+  sqflite_common 2.5.6 (2.5.11 available)
+  sqflite_common_ffi 2.4.0+2 (2.4.2+1 available)
+  sqflite_common_ffi_web 1.1.1 (1.1.2 available)
+  sqflite_darwin 2.4.2 (2.4.3+1 available)
+  sqflite_platform_interface 2.4.0 (2.4.1 available)
+  sqlite3 3.1.6 (3.5.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  synchronized 3.4.0 (3.4.1+2 available)
+  test_api 0.7.9 (0.7.13 available)
+  url_launcher_linux 3.2.2 (3.2.3 available)
+  url_launcher_web 2.4.2 (2.4.3 available)
+  url_launcher_windows 3.1.5 (3.1.6 available)
+  uuid 4.5.3 (4.6.0 available)
+  vector_math 2.2.0 (2.4.2 available)
+  vm_service 15.0.2 (15.3.0 available)
+  win32 5.15.0 (6.4.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+58 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart
+00:00 +0: UAT-01 profile setup UAT-01.1 an empty form is rejected field by field
+10:00 +0 -1: UAT-01 profile setup UAT-01.1 an empty form is rejected field by field [E]
+  TimeoutException after 0:10:00.000000: Test timed out after 10 minutes.
+  dart:isolate  _RawReceivePort._handleMessage
+  
+10:00 +0 -1: UAT-01 profile setup UAT-01.2 a one-character name and a malformed email are caught
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-01.2 a one-character name and a malformed email are caught
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:00 +0 -2: UAT-01 profile setup UAT-01.2 a one-character name and a malformed email are caught [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-01.2 a one-character name and a malformed email are caught
+  
+10:00 +0 -2: UAT-01 profile setup UAT-01.3 a whitespace-only name is rejected
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-01.3 a whitespace-only name is rejected
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:00 +0 -3: UAT-01 profile setup UAT-01.3 a whitespace-only name is rejected [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-01.3 a whitespace-only name is rejected
+  
+10:00 +0 -3: UAT-01 profile setup UAT-01.4 DEFECT: phone validation accepts an obviously fake number
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-01.4 DEFECT: phone validation accepts an obviously fake number
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:00 +0 -4: UAT-01 profile setup UAT-01.4 DEFECT: phone validation accepts an obviously fake number [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-01.4 DEFECT: phone validation accepts an obviously fake number
+  
+10:00 +0 -4: UAT-03 create auction form UAT-03.6 an empty auction form is rejected
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-03.6 an empty auction form is rejected
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:00 +0 -5: UAT-03 create auction form UAT-03.6 an empty auction form is rejected [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-03.6 an empty auction form is rejected
+  
+10:00 +0 -5: UAT-03 create auction form UAT-03.7 short title/description and a zero bid are rejected
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-03.7 short title/description and a zero bid are rejected
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:00 +0 -6: UAT-03 create auction form UAT-03.7 short title/description and a zero bid are rejected [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-03.7 short title/description and a zero bid are rejected
+  
+10:00 +0 -6: UAT-03 create auction form UAT-03.8 a non-numeric starting bid is rejected
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-03.8 a non-numeric starting bid is rejected
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:00 +0 -7: UAT-03 create auction form UAT-03.8 a non-numeric starting bid is rejected [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-03.8 a non-numeric starting bid is rejected
+  
+10:00 +0 -7: UAT-03 create auction form UAT-03.9 DEFECT: a NEGATIVE starting bid is silently turned positive
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-03.9 DEFECT: a NEGATIVE starting bid is silently turned positive
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:00 +0 -8: UAT-03 create auction form UAT-03.9 DEFECT: a NEGATIVE starting bid is silently turned positive [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-03.9 DEFECT: a NEGATIVE starting bid is silently turned positive
+  
+10:00 +0 -8: UAT-03 create auction form UAT-03.10 DEFECT: an auction can be posted with no photos at all
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-03.10 DEFECT: an auction can be posted with no photos at all
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:01 +0 -9: UAT-03 create auction form UAT-03.10 DEFECT: an auction can be posted with no photos at all [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-03.10 DEFECT: an auction can be posted with no photos at all
+  
+10:01 +0 -9: UAT-04 listing imagery UAT-04.1 DEFECT: a photo-less auction is dressed in a stock internet photo of someone else's item
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-04.1 DEFECT: a photo-less auction is dressed in a stock internet photo of someone else's item
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:01 +0 -10: UAT-04 listing imagery UAT-04.1 DEFECT: a photo-less auction is dressed in a stock internet photo of someone else's item [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-04.1 DEFECT: a photo-less auction is dressed in a stock internet photo of someone else's item
+  
+10:01 +0 -10: UAT-04 listing imagery UAT-04.2 DEFECT: on the web build, photos the seller DID upload are never displayed
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-04.2 DEFECT: on the web build, photos the seller DID upload are never displayed
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:01 +0 -11: UAT-04 listing imagery UAT-04.2 DEFECT: on the web build, photos the seller DID upload are never displayed [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-04.2 DEFECT: on the web build, photos the seller DID upload are never displayed
+  
+10:01 +0 -11: UAT-05 bid screen UAT-05.15 the minimum bid is stated to the bidder
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-05.15 the minimum bid is stated to the bidder
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:01 +0 -12: UAT-05 bid screen UAT-05.15 the minimum bid is stated to the bidder [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.15 the minimum bid is stated to the bidder
+  
+10:01 +0 -12: UAT-05 bid screen UAT-05.16 a bid below the minimum is refused in the form
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-05.16 a bid below the minimum is refused in the form
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:01 +0 -13: UAT-05 bid screen UAT-05.16 a bid below the minimum is refused in the form [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.16 a bid below the minimum is refused in the form
+  
+10:01 +0 -13: UAT-05 bid screen UAT-05.17 letters in the bid box are refused
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-05.17 letters in the bid box are refused
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:01 +0 -14: UAT-05 bid screen UAT-05.17 letters in the bid box are refused [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.17 letters in the bid box are refused
+  
+10:01 +0 -14: UAT-05 bid screen UAT-05.18 "Infinity" cannot be bid
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-05.18 "Infinity" cannot be bid
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:01 +0 -15: UAT-05 bid screen UAT-05.18 "Infinity" cannot be bid [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.18 "Infinity" cannot be bid
+  
+10:01 +0 -15: UAT-05 bid screen UAT-05.19 a thousands-separated bid is understood
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-05.19 a thousands-separated bid is understood
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:01 +0 -16: UAT-05 bid screen UAT-05.19 a thousands-separated bid is understood [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.19 a thousands-separated bid is understood
+  
+10:01 +0 -16: UAT-05 bid screen UAT-05.20 DEFECT: a NEGATIVE bid is silently converted into a real, binding positive bid
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-05.20 DEFECT: a NEGATIVE bid is silently converted into a real, binding positive bid
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:01 +0 -17: UAT-05 bid screen UAT-05.20 DEFECT: a NEGATIVE bid is silently converted into a real, binding positive bid [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.20 DEFECT: a NEGATIVE bid is silently converted into a real, binding positive bid
+  
+10:01 +0 -17: UAT-05 bid screen UAT-05.21 DEFECT: an absurd bid is accepted with no confirmation step
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Guarded function conflict.
+You must use "await" with all Future-returning test APIs.
+The guarded method "pumpWidget" from class WidgetTester was called from
+file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart on line 89.
+Then, the "pump" method from class AutomatedTestWidgetsFlutterBinding was called from
+package:flutter_test/src/binding.dart on line 1671.
+The first method (WidgetTester.pumpWidget) had not yet finished executing at the time that the
+second method (AutomatedTestWidgetsFlutterBinding.pump) was called. Since both are guarded, and the
+second was not a nested call inside the first, the first must complete its execution before the
+second can be called. Typically, this is achieved by putting an "await" statement in front of the
+call to the first.
+
+When the first method (WidgetTester.pumpWidget) was called, this was the stack:
+#0      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:72:42)
+#1      WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#2      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:89:20)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+When the exception was thrown, this was the stack:
+#0      TestAsyncUtils.guardSync (package:flutter_test/src/test_async_utils.dart:312:5)
+#1      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:66:5)
+#2      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1671:11)
+#6      TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#7      AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#8      FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#13     withClock (package:clock/src/default.dart:52:10)
+#14     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#19     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#20     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#21     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#22     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#23     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#24     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+
+The test description was:
+  UAT-05.21 DEFECT: an absurd bid is accepted with no confirmation step
+════════════════════════════════════════════════════════════════════════════════════════════════════
+10:01 +0 -18: UAT-05 bid screen UAT-05.21 DEFECT: an absurd bid is accepted with no confirmation step [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.21 DEFECT: an absurd bid is accepted with no confirmation step
+  
+10:01 +0 -18: Some tests failed.

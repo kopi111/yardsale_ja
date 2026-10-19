@@ -1,0 +1,182 @@
+rules_version = '2';
+
+// Money, bids, settlements, reviews and notices are written only by Cloud
+// Functions (the Admin SDK bypasses these rules). A client may write only what
+// it alone owns: its profile, its favourites, its own lots before bidding, and
+// its side of a conversation.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isSelf(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    function onlyChanges(keys) {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(keys);
+    }
+
+    function memberName() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.name;
+    }
+
+    function isText(value, min, max) {
+      return value is string && value.size() >= min && value.size() <= max;
+    }
+
+    // ── Members ─────────────────────────────────────────────────────────
+    match /users/{uid} {
+      allow read: if signedIn();
+      allow create: if isSelf(uid)
+        && request.resource.data.keys().hasOnly(['name', 'parish', 'avatar_path', 'created_at'])
+        && isText(request.resource.data.name, 2, 60)
+        && isText(request.resource.data.parish, 1, 40)
+        && request.resource.data.created_at == request.time;
+      allow update: if isSelf(uid)
+        && onlyChanges(['name', 'parish', 'avatar_path'])
+        && isText(request.resource.data.name, 2, 60)
+        && isText(request.resource.data.parish, 1, 40);
+
+      // Contact details are the member's alone. Other members see the
+      // public profile above and never an email or phone number.
+      match /private/{document} {
+        allow read, write: if isSelf(uid);
+      }
+
+      match /favorites/{listingId} {
+        allow read, write: if isSelf(uid);
+      }
+
+      match /notifications/{noticeId} {
+        allow read: if isSelf(uid);
+        allow update: if isSelf(uid)
+          && onlyChanges(['is_read'])
+          && request.resource.data.is_read == true;
+      }
+    }
+
+    // ── Lots ────────────────────────────────────────────────────────────
+    match /listings/{listingId} {
+      function termsFixedOnceBidding() {
+        return ['title', 'description', 'starting_bid', 'category', 'condition'];
+      }
+
+      function validEndTime(data) {
+        return data.auction_end_time is timestamp
+          && data.auction_end_time > request.time
+          && data.auction_end_time <= request.time + duration.value(31, 'd');
+      }
+
+      function validTerms(data) {
+        return isText(data.title, 3, 120)
+          && isText(data.description, 0, 4000)
+          && data.starting_bid is number
+          && data.starting_bid > 0
+          && data.starting_bid <= 1000000000
+          && isText(data.category, 1, 40)
+          && isText(data.condition, 1, 40)
+          && isText(data.parish, 1, 40)
+          && data.image_paths is list
+          && data.image_paths.size() <= 8;
+      }
+
+      allow read: if signedIn();
+
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly([
+             'user_id', 'title', 'description', 'starting_bid', 'category',
+             'condition', 'parish', 'status', 'created_at', 'updated_at',
+             'auction_end_time', 'current_bid', 'highest_bidder_id',
+             'highest_bidder_name', 'bid_count', 'auctioneer_name',
+             'auctioneer_parish', 'image_paths'])
+        && request.resource.data.user_id == request.auth.uid
+        && request.resource.data.status == 'active'
+        && request.resource.data.bid_count == 0
+        && request.resource.data.current_bid == null
+        && request.resource.data.highest_bidder_id == null
+        && request.resource.data.auctioneer_name == memberName()
+        && request.resource.data.created_at == request.time
+        && request.resource.data.updated_at == request.time
+        && validEndTime(request.resource.data)
+        && validTerms(request.resource.data);
+
+      // The seller may keep editing a live lot. Once somebody has bid, the
+      // terms that bidder relied on are fixed; only the handover details,
+      // the photos and the closing time may still move.
+      allow update: if signedIn()
+        && resource.data.user_id == request.auth.uid
+        && resource.data.status == 'active'
+        && resource.data.auction_end_time > request.time
+        && onlyChanges(termsFixedOnceBidding().concat(
+             ['parish', 'auction_end_time', 'image_paths', 'updated_at']))
+        && (resource.data.bid_count == 0
+            || !request.resource.data.diff(resource.data).affectedKeys()
+                  .hasAny(termsFixedOnceBidding()))
+        && request.resource.data.updated_at == request.time
+        && validEndTime(request.resource.data)
+        && validTerms(request.resource.data);
+
+      match /bids/{bidId} {
+        allow read: if signedIn();
+      }
+    }
+
+    // ── Conversations ───────────────────────────────────────────────────
+    match /conversations/{conversationId} {
+      function isParticipant() {
+        return signedIn() && request.auth.uid in resource.data.participants;
+      }
+
+      allow read: if signedIn()
+        && (resource == null || request.auth.uid in resource.data.participants);
+
+      allow create: if signedIn()
+        && conversationId == request.resource.data.listing_id + '_' + request.auth.uid
+        && request.resource.data.buyer_id == request.auth.uid
+        && request.resource.data.seller_id != request.auth.uid
+        && request.resource.data.seller_id ==
+             get(/databases/$(database)/documents/listings/$(request.resource.data.listing_id)).data.user_id
+        && request.resource.data.participants ==
+             [request.resource.data.buyer_id, request.resource.data.seller_id];
+
+      allow update: if isParticipant()
+        && onlyChanges(['last_message', 'last_message_at', 'last_sender_id',
+                        'updated_at', 'unread', 'listing_price']);
+
+      match /messages/{messageId} {
+        function conversation() {
+          return get(/databases/$(database)/documents/conversations/$(conversationId)).data;
+        }
+
+        allow read: if signedIn() && request.auth.uid in conversation().participants;
+        allow create: if signedIn()
+          && request.auth.uid in conversation().participants
+          && request.resource.data.sender_id == request.auth.uid
+          && request.resource.data.keys().hasOnly(
+               ['conversation_id', 'sender_id', 'content', 'is_read', 'created_at'])
+          && request.resource.data.conversation_id == conversationId
+          && isText(request.resource.data.content, 1, 2000)
+          && request.resource.data.is_read == false
+          && request.resource.data.created_at == request.time;
+        allow update: if signedIn()
+          && request.auth.uid in conversation().participants
+          && resource.data.sender_id != request.auth.uid
+          && onlyChanges(['is_read'])
+          && request.resource.data.is_read == true;
+      }
+    }
+
+    // ── Settlements and reputation: server-written, party-read ─────────
+    match /transactions/{listingId} {
+      allow read: if signedIn()
+        && (resource == null || request.auth.uid in resource.data.participants);
+    }
+
+    match /reviews/{reviewId} {
+      allow read: if signedIn();
+    }
+  }
+}

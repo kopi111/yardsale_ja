@@ -1,0 +1,649 @@
+Resolving dependencies...
+Downloading packages...
+  async 2.13.0 (2.13.1 available)
+  badges 3.1.2 (3.2.0 available)
+  clock 1.1.2 (1.1.3 available)
+  code_assets 1.0.0 (2.0.0 available)
+  cross_file 0.3.5+2 (0.3.5+5 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  dev_build 1.1.4 (1.1.8+3 available)
+  file_selector_linux 0.9.4 (0.9.4+1 available)
+  file_selector_macos 0.9.5 (0.9.5+1 available)
+  file_selector_windows 0.9.3+5 (0.9.3+6 available)
+  flutter_plugin_android_lifecycle 2.0.33 (2.0.35 available)
+  flutter_slidable 3.1.2 (4.0.3 available)
+  glob 2.1.3 (2.2.0 available)
+  hooks 1.0.1 (2.2.0 available)
+  image_cropper 8.1.0 (12.2.1 available)
+  image_cropper_for_web 6.1.0 (7.0.0 available)
+  image_cropper_platform_interface 7.2.0 (8.0.0 available)
+  image_picker 1.2.1 (1.2.3 available)
+  image_picker_android 0.8.13+14 (0.8.13+21 available)
+  image_picker_ios 0.8.13+6 (0.8.13+7 available)
+  intl 0.19.0 (0.20.3 available)
+  matcher 0.12.18 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.17.0 (1.19.0 available)
+  mime 2.0.0 (2.1.0 available)
+  native_toolchain_c 0.17.4 (0.19.4 available)
+  objective_c 9.3.0 (9.6.0 available)
+  path_provider 2.1.5 (2.1.6 available)
+  path_provider_android 2.2.22 (2.3.1 available)
+  path_provider_linux 2.2.1 (2.2.2 available)
+  path_provider_platform_interface 2.1.2 (2.1.3 available)
+  pool 1.5.2 (1.5.3 available)
+  process_run 1.3.1+1 (1.3.5 available)
+  pub_semver 2.2.0 (2.2.1 available)
+  share_plus 10.1.4 (13.3.0 available)
+  share_plus_platform_interface 5.0.2 (7.2.0 available)
+  shared_preferences_android 2.4.23 (2.4.28 available)
+  shared_preferences_foundation 2.5.6 (2.5.7 available)
+  shimmer 3.0.0 (4.0.0 available)
+  sqflite 2.4.2 (2.4.3 available)
+  sqflite_android 2.4.2+2 (2.4.3 available)
+  sqflite_common 2.5.6 (2.5.11 available)
+  sqflite_common_ffi 2.4.0+2 (2.4.2+1 available)
+  sqflite_common_ffi_web 1.1.1 (1.1.2 available)
+  sqflite_darwin 2.4.2 (2.4.3+1 available)
+  sqflite_platform_interface 2.4.0 (2.4.1 available)
+  sqlite3 3.1.6 (3.5.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  synchronized 3.4.0 (3.4.1+2 available)
+  test_api 0.7.9 (0.7.13 available)
+  url_launcher_linux 3.2.2 (3.2.3 available)
+  url_launcher_web 2.4.2 (2.4.3 available)
+  url_launcher_windows 3.1.5 (3.1.6 available)
+  uuid 4.5.3 (4.6.0 available)
+  vector_math 2.2.0 (2.4.2 available)
+  vm_service 15.0.2 (15.3.0 available)
+  win32 5.15.0 (6.4.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+58 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart
+00:00 +0: UAT-01 profile setup UAT-01.1 an empty form is rejected field by field
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+The finder "Found 0 widgets with text "Create Profile": []" (used in a call to "tap()") could not
+find any matching widgets.
+
+When the exception was thrown, this was the stack:
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2076:7)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1928:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1061:7)
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:96:20)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UAT-01.1 an empty form is rejected field by field
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +0 -1: UAT-01 profile setup UAT-01.1 an empty form is rejected field by field [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-01.1 an empty form is rejected field by field
+  
+00:01 +0 -1: UAT-01 profile setup UAT-01.2 a one-character name and a malformed email are caught
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:694:25)
+#1      WidgetController.state (package:flutter_test/src/controller.dart:927:42)
+#2      WidgetTester.showKeyboard.<anonymous closure> (package:flutter_test/src/widget_tester.dart:1125:42)
+#5      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#6      WidgetTester.showKeyboard (package:flutter_test/src/widget_tester.dart:1124:27)
+#7      WidgetTester.enterText.<anonymous closure> (package:flutter_test/src/widget_tester.dart:1160:13)
+#10     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#11     WidgetTester.enterText (package:flutter_test/src/widget_tester.dart:1159:27)
+#12     main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:107:20)
+<asynchronous suspension>
+#13     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#14     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The test description was:
+  UAT-01.2 a one-character name and a malformed email are caught
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +0 -2: UAT-01 profile setup UAT-01.2 a one-character name and a malformed email are caught [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-01.2 a one-character name and a malformed email are caught
+  
+00:02 +0 -2: UAT-01 profile setup UAT-01.3 a whitespace-only name is rejected
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:694:25)
+#1      WidgetController.state (package:flutter_test/src/controller.dart:927:42)
+#2      WidgetTester.showKeyboard.<anonymous closure> (package:flutter_test/src/widget_tester.dart:1125:42)
+#5      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#6      WidgetTester.showKeyboard (package:flutter_test/src/widget_tester.dart:1124:27)
+#7      WidgetTester.enterText.<anonymous closure> (package:flutter_test/src/widget_tester.dart:1160:13)
+#10     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#11     WidgetTester.enterText (package:flutter_test/src/widget_tester.dart:1159:27)
+#12     main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:122:20)
+<asynchronous suspension>
+#13     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#14     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The test description was:
+  UAT-01.3 a whitespace-only name is rejected
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +0 -3: UAT-01 profile setup UAT-01.3 a whitespace-only name is rejected [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-01.3 a whitespace-only name is rejected
+  
+00:02 +0 -3: UAT-01 profile setup UAT-01.4 DEFECT: phone validation accepts an obviously fake number
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:694:25)
+#1      WidgetController.state (package:flutter_test/src/controller.dart:927:42)
+#2      WidgetTester.showKeyboard.<anonymous closure> (package:flutter_test/src/widget_tester.dart:1125:42)
+#5      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#6      WidgetTester.showKeyboard (package:flutter_test/src/widget_tester.dart:1124:27)
+#7      WidgetTester.enterText.<anonymous closure> (package:flutter_test/src/widget_tester.dart:1160:13)
+#10     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#11     WidgetTester.enterText (package:flutter_test/src/widget_tester.dart:1159:27)
+#12     main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:133:20)
+<asynchronous suspension>
+#13     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#14     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The test description was:
+  UAT-01.4 DEFECT: phone validation accepts an obviously fake number
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +0 -4: UAT-01 profile setup UAT-01.4 DEFECT: phone validation accepts an obviously fake number [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-01.4 DEFECT: phone validation accepts an obviously fake number
+  
+00:02 +0 -4: UAT-03 create auction form UAT-03.6 an empty auction form is rejected
+
+Warning: A call to tap() with finder "Found 1 widget with text "Post Auction": [
+  Text("Post Auction", inherit: true, size: 16.0, dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+]" derived an Offset (Offset(400.0, 810.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+Indeed, Offset(400.0, 810.0) is outside the bounds of the root of the render tree, Size(800.0, 600.0).
+The finder corresponds to this RenderBox: RenderParagraph#7ca5d relayoutBoundary=up25
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#64244(_ReusableRenderView#c5f3f), HitTestEntry<HitTestTarget>#fcb14(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2144:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1928:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1061:7)
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:160:20)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TextWidgetFinder:<Found 0 widgets with text "Title is required": []>
+   Which: means none were found but one was expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:163:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart line 163
+The test description was:
+  UAT-03.6 an empty auction form is rejected
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:03 +0 -5: UAT-03 create auction form UAT-03.6 an empty auction form is rejected [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-03.6 an empty auction form is rejected
+  
+00:03 +0 -5: UAT-03 create auction form UAT-03.7 short title/description and a zero bid are rejected
+
+Warning: A call to tap() with finder "Found 1 widget with text "Post Auction": [
+  Text("Post Auction", inherit: true, size: 16.0, dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+]" derived an Offset (Offset(400.0, 810.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+Indeed, Offset(400.0, 810.0) is outside the bounds of the root of the render tree, Size(800.0, 600.0).
+The finder corresponds to this RenderBox: RenderParagraph#32bb8 relayoutBoundary=up25
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#df26a(_ReusableRenderView#c5f3f), HitTestEntry<HitTestTarget>#3a9eb(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2144:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1928:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1061:7)
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:177:20)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TextWidgetFinder:<Found 0 widgets with text "Title must be at least 3 characters": []>
+   Which: means none were found but one was expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:180:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart line 180
+The test description was:
+  UAT-03.7 short title/description and a zero bid are rejected
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:03 +0 -6: UAT-03 create auction form UAT-03.7 short title/description and a zero bid are rejected [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-03.7 short title/description and a zero bid are rejected
+  
+00:03 +0 -6: UAT-03 create auction form UAT-03.8 a non-numeric starting bid is rejected
+
+Warning: A call to tap() with finder "Found 1 widget with text "Post Auction": [
+  Text("Post Auction", inherit: true, size: 16.0, dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+]" derived an Offset (Offset(400.0, 810.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+Indeed, Offset(400.0, 810.0) is outside the bounds of the root of the render tree, Size(800.0, 600.0).
+The finder corresponds to this RenderBox: RenderParagraph#7a5a8 relayoutBoundary=up25
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#13d07(_ReusableRenderView#c5f3f), HitTestEntry<HitTestTarget>#90e9c(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2144:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1928:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1061:7)
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:191:20)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TextWidgetFinder:<Found 0 widgets with text "Enter a valid starting bid": []>
+   Which: means none were found but one was expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:193:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart line 193
+The test description was:
+  UAT-03.8 a non-numeric starting bid is rejected
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +0 -7: UAT-03 create auction form UAT-03.8 a non-numeric starting bid is rejected [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-03.8 a non-numeric starting bid is rejected
+  
+00:04 +0 -7: UAT-03 create auction form UAT-03.9 DEFECT: a NEGATIVE starting bid is silently turned positive
+
+Warning: A call to tap() with finder "Found 1 widget with text "Post Auction": [
+  Text("Post Auction", inherit: true, size: 16.0, dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+]" derived an Offset (Offset(400.0, 810.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+Indeed, Offset(400.0, 810.0) is outside the bounds of the root of the render tree, Size(800.0, 600.0).
+The finder corresponds to this RenderBox: RenderParagraph#dac91 relayoutBoundary=up25
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#9805b(_ReusableRenderView#c5f3f), HitTestEntry<HitTestTarget>#b9f98(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2144:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1928:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1061:7)
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:202:20)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+00:04 +1 -7: UAT-03 create auction form UAT-03.10 DEFECT: an auction can be posted with no photos at all
+
+Warning: A call to tap() with finder "Found 1 widget with text "Post Auction": [
+  Text("Post Auction", inherit: true, size: 16.0, dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+]" derived an Offset (Offset(400.0, 810.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+Indeed, Offset(400.0, 810.0) is outside the bounds of the root of the render tree, Size(800.0, 600.0).
+The finder corresponds to this RenderBox: RenderParagraph#51bde relayoutBoundary=up25
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#f44fd(_ReusableRenderView#c5f3f), HitTestEntry<HitTestTarget>#88e55(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2144:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1928:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1061:7)
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:224:20)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: <1>
+  Actual: <0>
+proves the auction was accepted
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:229:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart line 229
+The test description was:
+  UAT-03.10 DEFECT: an auction can be posted with no photos at all
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:05 +1 -8: UAT-03 create auction form UAT-03.10 DEFECT: an auction can be posted with no photos at all [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-03.10 DEFECT: an auction can be posted with no photos at all
+  
+00:05 +1 -8: UAT-04 listing imagery UAT-04.1 DEFECT: a photo-less auction is dressed in a stock internet photo of someone else's item
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+DEFECT: the card for a seller-supplied-nothing auction renders a professional stock photograph from
+https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=400&h=400&fit=crop.
+listing_image_widget.dart:85-167 maps the TITLE TEXT to a stock photo, so typing "Toyota Corolla
+2018" summons a picture of a Corolla that is not the item for sale. A buyer bidding J$3.2m has no
+way to tell a real photo from a stock one.
+
+When the exception was thrown, this was the stack:
+#0      fail (package:matcher/src/expect/expect.dart:187:31)
+#1      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:265:7)
+<asynchronous suspension>
+#2      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UAT-04.1 DEFECT: a photo-less auction is dressed in a stock internet photo of someone else's item
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:05 +1 -9: UAT-04 listing imagery UAT-04.1 DEFECT: a photo-less auction is dressed in a stock internet photo of someone else's item [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-04.1 DEFECT: a photo-less auction is dressed in a stock internet photo of someone else's item
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+00:05 +1 -9: UAT-04 listing imagery UAT-04.2 DEFECT: on the web build, photos the seller DID upload are never displayed
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+DEFECT (web build only): the app under test runs on Chrome, where kIsWeb is true, so
+listing_image_widget.dart:26 skips the seller's photos entirely and substitutes the stock Unsplash
+image. Uploading photos on the web build has no visible effect anywhere in the app.
+
+When the exception was thrown, this was the stack:
+#0      fail (package:matcher/src/expect/expect.dart:187:31)
+#1      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:300:7)
+<asynchronous suspension>
+#2      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UAT-04.2 DEFECT: on the web build, photos the seller DID upload are never displayed
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:05 +1 -10: UAT-04 listing imagery UAT-04.2 DEFECT: on the web build, photos the seller DID upload are never displayed [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-04.2 DEFECT: on the web build, photos the seller DID upload are never displayed
+  
+00:05 +1 -10: UAT-05 bid screen UAT-05.15 the minimum bid is stated to the bidder
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      main.<anonymous closure>.openBidScreen (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:328:7)
+<asynchronous suspension>
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:334:7)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UAT-05.15 the minimum bid is stated to the bidder
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:08 +1 -11: UAT-05 bid screen UAT-05.15 the minimum bid is stated to the bidder [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.15 the minimum bid is stated to the bidder
+  
+00:08 +1 -11: UAT-05 bid screen UAT-05.16 a bid below the minimum is refused in the form
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      main.<anonymous closure>.openBidScreen (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:328:7)
+<asynchronous suspension>
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:341:7)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UAT-05.16 a bid below the minimum is refused in the form
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:09 +1 -12: UAT-05 bid screen UAT-05.16 a bid below the minimum is refused in the form [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.16 a bid below the minimum is refused in the form
+  
+00:09 +1 -12: UAT-05 bid screen UAT-05.17 letters in the bid box are refused
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      main.<anonymous closure>.openBidScreen (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:328:7)
+<asynchronous suspension>
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:354:7)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UAT-05.17 letters in the bid box are refused
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:10 +1 -13: UAT-05 bid screen UAT-05.17 letters in the bid box are refused [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.17 letters in the bid box are refused
+  
+00:10 +1 -13: UAT-05 bid screen UAT-05.18 "Infinity" cannot be bid
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      main.<anonymous closure>.openBidScreen (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:328:7)
+<asynchronous suspension>
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:364:7)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UAT-05.18 "Infinity" cannot be bid
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:12 +1 -14: UAT-05 bid screen UAT-05.18 "Infinity" cannot be bid [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.18 "Infinity" cannot be bid
+  
+00:12 +1 -14: UAT-05 bid screen UAT-05.19 a thousands-separated bid is understood
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      main.<anonymous closure>.openBidScreen (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:328:7)
+<asynchronous suspension>
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:373:7)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UAT-05.19 a thousands-separated bid is understood
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:13 +1 -15: UAT-05 bid screen UAT-05.19 a thousands-separated bid is understood [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.19 a thousands-separated bid is understood
+  
+00:13 +1 -15: UAT-05 bid screen UAT-05.20 DEFECT: a NEGATIVE bid is silently converted into a real, binding positive bid
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      main.<anonymous closure>.openBidScreen (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:328:7)
+<asynchronous suspension>
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:385:7)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UAT-05.20 DEFECT: a NEGATIVE bid is silently converted into a real, binding positive bid
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:14 +1 -16: UAT-05 bid screen UAT-05.20 DEFECT: a NEGATIVE bid is silently converted into a real, binding positive bid [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.20 DEFECT: a NEGATIVE bid is silently converted into a real, binding positive bid
+  
+00:14 +1 -16: UAT-05 bid screen UAT-05.21 DEFECT: an absurd bid is accepted with no confirmation step
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      main.<anonymous closure>.openBidScreen (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:328:7)
+<asynchronous suspension>
+#3      main.<anonymous closure>.<anonymous closure> (file:///home/kopi/projects/yardsale_ja/test/uat/uat_widget_journeys_test.dart:409:7)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  UAT-05.21 DEFECT: an absurd bid is accepted with no confirmation step
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:15 +1 -17: UAT-05 bid screen UAT-05.21 DEFECT: an absurd bid is accepted with no confirmation step [E]
+  Test failed. See exception logs above.
+  The test description was: UAT-05.21 DEFECT: an absurd bid is accepted with no confirmation step
+  
+00:15 +1 -17: Some tests failed.

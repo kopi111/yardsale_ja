@@ -1,0 +1,16 @@
+# TODO-current — YardSale JA goes live on Firebase (2026-09-23)
+
+Decisions (kopi): new project yardsale-ja · Email+password + Google sign-in ·
+Cloud Functions on Blaze close auctions · Android + Web first.
+
+[ ] 1. Create Firebase project + register Android & Web apps; flutterfire configure
+[ ] 2. Add firebase_core/auth/cloud_firestore/storage; init in main
+[ ] 3. Auth: sign-in / register / Google screens replace local profile setup
+[ ] 4. Firestore data model + repositories (listings, bids, favorites, chat, txns, reviews, notifications)
+[ ] 5. Photos -> Firebase Storage
+[ ] 6. Bids via Firestore transactions; server-authoritative closing in Cloud Functions
+[ ] 7. firestore.rules + storage.rules + indexes
+[ ] 8. Demo seed / demo-bot chat removed from the live build
+[ ] 9. Tests (emulator), analyze clean, run in Chrome against emulators
+[ ] 10. Blaze upgrade + enable Auth providers (kopi, console) -> deploy rules/functions/hosting
+[ ] 11. Memory + delete this file

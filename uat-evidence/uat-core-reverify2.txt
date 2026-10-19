@@ -1,0 +1,325 @@
+Resolving dependencies...
+Downloading packages...
+  async 2.13.0 (2.13.1 available)
+  badges 3.1.2 (3.2.0 available)
+  clock 1.1.2 (1.1.3 available)
+  code_assets 1.0.0 (2.0.0 available)
+  cross_file 0.3.5+2 (0.3.5+5 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  dev_build 1.1.4 (1.1.8+3 available)
+  file_selector_linux 0.9.4 (0.9.4+1 available)
+  file_selector_macos 0.9.5 (0.9.5+1 available)
+  file_selector_windows 0.9.3+5 (0.9.3+6 available)
+  flutter_plugin_android_lifecycle 2.0.33 (2.0.35 available)
+  flutter_slidable 3.1.2 (4.0.3 available)
+  glob 2.1.3 (2.2.0 available)
+  hooks 1.0.1 (2.2.0 available)
+  image_cropper 8.1.0 (12.2.1 available)
+  image_cropper_for_web 6.1.0 (7.0.0 available)
+  image_cropper_platform_interface 7.2.0 (8.0.0 available)
+  image_picker 1.2.1 (1.2.3 available)
+  image_picker_android 0.8.13+14 (0.8.13+21 available)
+  image_picker_ios 0.8.13+6 (0.8.13+7 available)
+  intl 0.19.0 (0.20.3 available)
+  matcher 0.12.18 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.17.0 (1.19.0 available)
+  mime 2.0.0 (2.1.0 available)
+  native_toolchain_c 0.17.4 (0.19.4 available)
+  objective_c 9.3.0 (9.6.0 available)
+  path_provider 2.1.5 (2.1.6 available)
+  path_provider_android 2.2.22 (2.3.1 available)
+  path_provider_linux 2.2.1 (2.2.2 available)
+  path_provider_platform_interface 2.1.2 (2.1.3 available)
+  pool 1.5.2 (1.5.3 available)
+  process_run 1.3.1+1 (1.3.5 available)
+  pub_semver 2.2.0 (2.2.1 available)
+  share_plus 10.1.4 (13.3.0 available)
+  share_plus_platform_interface 5.0.2 (7.2.0 available)
+  shared_preferences_android 2.4.23 (2.4.28 available)
+  shared_preferences_foundation 2.5.6 (2.5.7 available)
+  shimmer 3.0.0 (4.0.0 available)
+  sqflite 2.4.2 (2.4.3 available)
+  sqflite_android 2.4.2+2 (2.4.3 available)
+  sqflite_common 2.5.6 (2.5.11 available)
+  sqflite_common_ffi 2.4.0+2 (2.4.2+1 available)
+  sqflite_common_ffi_web 1.1.1 (1.1.2 available)
+  sqflite_darwin 2.4.2 (2.4.3+1 available)
+  sqflite_platform_interface 2.4.0 (2.4.1 available)
+  sqlite3 3.1.6 (3.5.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  synchronized 3.4.0 (3.4.1+2 available)
+  test_api 0.7.9 (0.7.13 available)
+  url_launcher_linux 3.2.2 (3.2.3 available)
+  url_launcher_web 2.4.2 (2.4.3 available)
+  url_launcher_windows 3.1.5 (3.1.6 available)
+  uuid 4.5.3 (4.6.0 available)
+  vector_math 2.2.0 (2.4.2 available)
+  vm_service 15.0.2 (15.3.0 available)
+  win32 5.15.0 (6.4.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+58 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/kopi/projects/yardsale_ja/test/uat/uat_core_journeys_test.dart
+00:00 +0: UAT-10 formatting & reference data UAT-10.1 J$ prefix is used for prices
+00:00 +1: UAT-10 formatting & reference data UAT-10.2 DEFECT: prices with cents are silently rounded on screen
+00:00 +1 -1: UAT-10 formatting & reference data UAT-10.2 DEFECT: prices with cents are silently rounded on screen [E]
+  Expected: 'J$1,001'
+    Actual: 'J$1,000.60'
+     Which: is different.
+            Expected: J$1,001
+              Actual: J$1,000.60
+                            ^
+             Differ at offset 6
+  J$1,000.60 is DISPLAYED as J$1,001 - overstated by 40c
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/uat/uat_core_journeys_test.dart 101:7          main.<fn>.<fn>
+  
+00:00 +1 -1: UAT-10 formatting & reference data UAT-10.3 all 14 Jamaican parishes are offered
+00:00 +2 -1: UAT-10 formatting & reference data UAT-10.4 every category id used by seed data is a real category
+00:00 +3 -1: UAT-10 formatting & reference data UAT-10.5 DEFECT: no lookup exists to turn a category id into its label
+00:00 +3 -2: UAT-10 formatting & reference data UAT-10.5 DEFECT: no lookup exists to turn a category id into its label [E]
+  Expected: 'Home & Garden'
+    Actual: 'home_garden'
+     Which: is different.
+            Expected: Home & Gar ...
+              Actual: home_garde ...
+                      ^
+             Differ at offset 0
+  DEFECT: listing detail shows the raw category id ("home_garden", "phones") instead of the display name
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/uat/uat_core_journeys_test.dart 145:7          main.<fn>.<fn>
+  
+00:00 +3 -2: UAT-10 formatting & reference data UAT-10.6 time remaining shows Ended once past the end time
+00:00 +4 -2: UAT-10 formatting & reference data UAT-10.7 DEFECT: countdown loses all resolution under a minute
+00:00 +4 -3: UAT-10 formatting & reference data UAT-10.7 DEFECT: countdown loses all resolution under a minute [E]
+  Expected: not '0m'
+    Actual: '0m'
+  DEFECT: the last minute of an auction displays as "0m" with no seconds, and never refreshes
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/uat/uat_core_journeys_test.dart 166:7          main.<fn>.<fn>
+  
+00:00 +4 -3: UAT-05 place a bid UAT-05.1 happy path: first bid at the starting bid is accepted
+00:01 +5 -3: UAT-05 place a bid UAT-05.2 bid below the starting bid is rejected
+00:01 +6 -3: UAT-05 place a bid UAT-05.3 bid below the current bid is rejected
+00:01 +7 -3: UAT-05 place a bid UAT-05.4 bid EQUAL to the current bid is rejected
+00:01 +8 -3: UAT-05 place a bid UAT-05.5 zero and negative bids are rejected
+00:01 +9 -3: UAT-05 place a bid UAT-05.6 bidding on your OWN auction is rejected
+00:01 +10 -3: UAT-05 place a bid UAT-05.7 bidding on an auction marked ended is rejected
+00:01 +11 -3: UAT-05 place a bid UAT-05.8 bidding after the clock expires is rejected even while status is still active
+00:02 +12 -3: UAT-05 place a bid UAT-05.9 bidding on a deleted/absent auction is rejected
+00:02 +13 -3: UAT-05 place a bid UAT-05.10 concurrent equal bids: exactly one wins
+00:02 +14 -3: UAT-05 place a bid UAT-05.11 concurrent ascending bids leave a consistent record
+00:02 +15 -3: UAT-05 place a bid UAT-05.12 DEFECT: a bidder can outbid THEMSELVES and drive up their own price
+00:02 +15 -4: UAT-05 place a bid UAT-05.12 DEFECT: a bidder can outbid THEMSELVES and drive up their own price [E]
+  DEFECT: the same user was allowed to raise their own winning bid from J$2,000 to J$50,000 with nobody bidding against them. listing_repository.dart:258 never checks highest_bidder_id.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 305:7  main.<fn>.<fn>
+  
+00:02 +15 -4: UAT-05 place a bid UAT-05.13 DEFECT: there is no upper bound on a bid
+00:03 +15 -5: UAT-05 place a bid UAT-05.13 DEFECT: there is no upper bound on a bid [E]
+  DEFECT: a bid of J$1,000,000,000,000,000,000,000 was accepted and now locks the auction - no maximum, no confirmation step. listing_repository.dart:294 only checks the lower bound.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 315:7  main.<fn>.<fn>
+  
+00:03 +15 -5: UAT-05 place a bid UAT-05.14 DEFECT: a bid one cent above the current bid is rejected with a message that says the opposite
+00:03 +15 -6: UAT-05 place a bid UAT-05.14 DEFECT: a bid one cent above the current bid is rejected with a message that says the opposite [E]
+  Expected: contains 'J$1'
+    Actual: 'Your bid must be higher than the current bid.'
+     Which: does not contain 'J$1'
+  DEFECT: J$2,000.50 IS higher than J$2,000 but is rejected by the undisclosed +J$1 increment rule at listing_repository.dart:292. The message tells the bidder something untrue about their own bid.
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/uat/uat_core_journeys_test.dart 330:9          main.<fn>.<fn>
+  
+00:03 +15 -6: UAT-06 auction ending and settlement UAT-06.1 ending an auction with bids creates a transaction
+00:03 +16 -6: UAT-06 auction ending and settlement UAT-06.2 ending an auction with NO bids creates no transaction
+00:03 +17 -6: UAT-06 auction ending and settlement UAT-06.3 settlement is idempotent - no duplicate transactions
+00:03 +18 -6: UAT-06 auction ending and settlement UAT-06.4 endExpiredAuctions settles every auction past its clock
+00:05 +19 -6: UAT-06 auction ending and settlement UAT-06.5 DEFECT: nothing ends an auction on its own - an expired auction stays "active" and unsettled until a user opens Browse
+00:06 +19 -7: UAT-06 auction ending and settlement UAT-06.5 DEFECT: nothing ends an auction on its own - an expired auction stays "active" and unsettled until a user opens Browse [E]
+  DEFECT: there is no scheduler, timer or background job. endExpiredAuctions() is only ever called from ListingProvider.loadListings and SearchProvider.search. If nobody opens Browse or Search, an auction that has finished is never closed and the winner is never settled.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 410:7  main.<fn>.<fn>
+  
+00:06 +19 -7: UAT-06 auction ending and settlement UAT-06.6 DEFECT: the winner is never notified - no message, no transaction alert, no unread badge
+00:06 +19 -8: UAT-06 auction ending and settlement UAT-06.6 DEFECT: the winner is never notified - no message, no transaction alert, no unread badge [E]
+  DEFECT: winning an auction produces no notification of any kind. The winner only discovers the win by re-opening that exact listing page. The bell icon in the Browse header (browse_screen.dart:163-167) is wired to an empty onPressed.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 427:7  main.<fn>.<fn>
+  
+00:06 +19 -8: UAT-06 auction ending and settlement UAT-06.7 DEFECT: an outbid bidder is never told they were outbid
+00:07 +19 -9: UAT-06 auction ending and settlement UAT-06.7 DEFECT: an outbid bidder is never told they were outbid [E]
+  DEFECT: BidderA lost the lead and receives nothing - no message, no badge, no record. There is no "my bids" screen either, so a bidder has no way to track auctions they are bidding in.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 440:7  main.<fn>.<fn>
+  
+00:07 +19 -9: UAT-06 auction ending and settlement UAT-06.8 DEFECT: the seller gets no settlement view - the ended listing offers the seller no winner and no action
+00:07 +19 -10: UAT-06 auction ending and settlement UAT-06.8 DEFECT: the seller gets no settlement view - the ended listing offers the seller no winner and no action [E]
+  DEFECT: on an ended auction the seller sees no winner banner, no "collect payment" action and no link to the transaction. listing_detail_screen.dart:688-690 gives the seller a null bottom bar once the auction ends.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 457:7  main.<fn>.<fn>
+  
+00:07 +19 -10: UAT-06 auction ending and settlement UAT-06.9 DEFECT: the seller can CANCEL an auction that has already ended and been paid for
+00:07 +19 -11: UAT-06 auction ending and settlement UAT-06.9 DEFECT: the seller can CANCEL an auction that has already ended and been paid for [E]
+  This auction has already been settled with a winner and cannot be cancelled.
+  package:yardsale_ja/data/repositories/listing_repository.dart 190:9  ListingRepository.deleteListing.<fn>
+  
+00:07 +19 -11: UAT-06 auction ending and settlement UAT-06.10 DEFECT: cancelling an auction silently discards live bids
+00:07 +19 -12: UAT-06 auction ending and settlement UAT-06.10 DEFECT: cancelling an auction silently discards live bids [E]
+  Bids have already been placed on this auction, so it cannot be cancelled.
+  package:yardsale_ja/data/repositories/listing_repository.dart 204:9  ListingRepository.deleteListing.<fn>
+  
+00:07 +19 -12: UAT-03 create and edit a listing UAT-03.1 a created auction is persisted and browsable
+00:07 +20 -12: UAT-03 create and edit a listing UAT-03.2 DEFECT: the seller can raise the starting bid ABOVE the live current bid after bidding has begun
+00:07 +20 -13: UAT-03 create and edit a listing UAT-03.2 DEFECT: the seller can raise the starting bid ABOVE the live current bid after bidding has begun [E]
+  DEFECT: an auction now reads "Starting bid: J$999,999" with a "Current Bid" of J$2,000. The seller changed the terms of a live auction after a bid was placed. create_listing_screen.dart:253-266 has no bidCount guard.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 531:7  main.<fn>.<fn>
+  
+00:07 +20 -13: UAT-03 create and edit a listing UAT-03.3 DEFECT: the seller can rewrite the title/description of a live auction that already carries bids
+00:08 +20 -14: UAT-03 create and edit a listing UAT-03.3 DEFECT: the seller can rewrite the title/description of a live auction that already carries bids [E]
+  DEFECT: bait and switch is possible. BidderA bid J$90,000 on an "iPhone 14 Pro" and is now the winning bidder on a "Broken phone case" for the same money. Edits are unrestricted and unlogged.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 549:7  main.<fn>.<fn>
+  
+00:08 +20 -14: UAT-03 create and edit a listing UAT-03.4 cancelled auctions stay off Browse
+00:08 +21 -14: UAT-03 create and edit a listing UAT-03.5 DEFECT: cancelled auctions are still shown on the seller's public profile
+00:08 +21 -15: UAT-03 create and edit a listing UAT-03.5 DEFECT: cancelled auctions are still shown on the seller's public profile [E]
+  DEFECT: the public profile grid lists a cancelled auction and lets a shopper tap into it, while the "Auctions" stat on the profile says 0. getListingsByOwner (listing_repository.dart:100) has no status filter; getUserListingCount (user_repository.dart:43) does.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 571:7  main.<fn>.<fn>
+  
+00:08 +21 -15: UAT-02 browse, filter and search UAT-02.1 browse returns only active auctions
+00:08 +22 -15: UAT-02 browse, filter and search UAT-02.2 category filter returns only that category
+00:08 +23 -15: UAT-02 browse, filter and search UAT-02.3 parish filter works
+00:08 +24 -15: UAT-02 browse, filter and search UAT-02.4 search finds by title, case-insensitively
+00:08 +25 -15: UAT-02 browse, filter and search UAT-02.5 search finds by description
+00:08 +26 -15: UAT-02 browse, filter and search UAT-02.6 a nonsense query returns no results (not an error)
+00:08 +27 -15: UAT-02 browse, filter and search UAT-02.7 SQL injection in the search box is safely parameterised
+00:08 +28 -15: UAT-02 browse, filter and search UAT-02.8 quotes and accents do not crash search
+00:09 +29 -15: UAT-02 browse, filter and search UAT-02.9 DEFECT: searching for "%" returns the entire catalogue
+00:09 +29 -16: UAT-02 browse, filter and search UAT-02.9 DEFECT: searching for "%" returns the entire catalogue [E]
+  Expected: empty
+    Actual: [
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              Instance of 'Listing',
+              ...
+            ]
+  DEFECT: LIKE wildcards are not escaped (listing_repository.dart:79-83). A shopper searching "%" or "50%" gets every auction in Jamaica back as a "match".
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/uat/uat_core_journeys_test.dart 637:7          main.<fn>.<fn>
+  
+00:09 +29 -16: UAT-02 browse, filter and search UAT-02.10 DEFECT: "_" in a search behaves as a wildcard
+00:09 +29 -17: UAT-02 browse, filter and search UAT-02.10 DEFECT: "_" in a search behaves as a wildcard [E]
+  Expected: empty
+    Actual: [Instance of 'Listing']
+  DEFECT: the underscore is treated as a single-character LIKE wildcard, so "i_hone" matches "iPhone". Unescaped LIKE input at listing_repository.dart:81.
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/uat/uat_core_journeys_test.dart 647:7          main.<fn>.<fn>
+  
+00:09 +29 -17: UAT-02 browse, filter and search UAT-02.11 price range filter uses the effective (current) bid
+00:09 +30 -17: UAT-02 browse, filter and search UAT-02.12 DEFECT: Browse never hides auctions whose clock has run out within the session
+00:10 +30 -18: UAT-02 browse, filter and search UAT-02.12 DEFECT: Browse never hides auctions whose clock has run out within the session [E]
+  Expected: empty
+    Actual: [Instance of 'Listing']
+  DEFECT: CategoryScreen (category_screen.dart:35) calls ListingRepository.getListings directly and never calls endExpiredAuctions, so a finished auction is listed as live until some other screen happens to sweep it.
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/uat/uat_core_journeys_test.dart 678:7          main.<fn>.<fn>
+  
+00:10 +30 -18: UAT-09 favorites UAT-09.1 favorite and unfavorite round trip
+00:10 +31 -18: UAT-09 favorites UAT-09.2 favorites are per user
+00:10 +32 -18: UAT-09 favorites UAT-09.3 DEFECT: a favourited auction vanishes from Favourites the moment it ends
+00:11 +32 -19: UAT-09 favorites UAT-09.3 DEFECT: a favourited auction vanishes from Favourites the moment it ends [E]
+  DEFECT: the user favourited an auction to watch it close, and the app removed it from Favourites at exactly the moment it closed. They now see "No favorites yet". listing_repository.dart:401 filters getFavorites on l.status = 'active'.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 720:7  main.<fn>.<fn>
+  
+00:11 +32 -19: UAT-08 payment and transactions UAT-08.1 recording a payment updates the settled transaction
+00:11 +33 -19: UAT-08 payment and transactions UAT-08.2 history shows the sale to BOTH parties
+00:11 +34 -19: UAT-08 payment and transactions UAT-08.3 a review can only be left once per party
+00:11 +35 -19: UAT-08 payment and transactions UAT-08.4 DEFECT: "Record Transaction" is not a payment - no money moves and the transaction stays "pending" forever unless a human taps Mark Complete
+00:11 +35 -20: UAT-08 payment and transactions UAT-08.4 DEFECT: "Record Transaction" is not a payment - no money moves and the transaction stays "pending" forever unless a human taps Mark Complete [E]
+  DEFECT / SCOPE: the payment journey is a form, not a payment. recordPayment (transaction_repository.dart:52) writes a free-text reference number that is never validated against anything, never changes status, and never contacts a payment provider. Lynk and Bank Transfer are labels only.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 792:7  main.<fn>.<fn>
+  
+00:11 +35 -20: UAT-08 payment and transactions UAT-08.5 DEFECT: either party can unilaterally mark a sale complete or cancelled
+00:12 +35 -21: UAT-08 payment and transactions UAT-08.5 DEFECT: either party can unilaterally mark a sale complete or cancelled [E]
+  DEFECT: the seller can mark the buyer's completed purchase cancelled (or vice versa) with one tap, no confirmation, no counter-signature and no audit trail. updateTransactionStatus takes no actor.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 811:7  main.<fn>.<fn>
+  
+00:12 +35 -21: UAT-08 payment and transactions UAT-08.6 DEFECT: a cancelled transaction is a dead end with no recovery
+00:12 +35 -22: UAT-08 payment and transactions UAT-08.6 DEFECT: a cancelled transaction is a dead end with no recovery [E]
+  DEFECT: once cancelled, the Transaction Detail screen offers no buttons at all (transaction_detail_screen.dart:165 returns an empty action list). The sale cannot be reinstated, the auction cannot be relisted, and no review can be left.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 826:7  main.<fn>.<fn>
+  
+00:12 +35 -22: UAT-07 chat UAT-07.1 messages persist and unread counts work
+00:12 +36 -22: UAT-07 chat UAT-07.2 an empty message is not sendable (guarded in the UI)
+00:12 +37 -22: UAT-07 chat UAT-07.3 DEFECT: chat replies are canned strings that ignore what was said
+00:12 +37 -23: UAT-07 chat UAT-07.3 DEFECT: chat replies are canned strings that ignore what was said [E]
+  DEFECT / FAKE FEATURE: the "seller" never reads a message. message_provider.dart:125-155 fires a 2-6s timer and replies with a random string from a hardcoded list ("Wah gwaan! Glad you're interested."). Asking "what is the lowest you will take?" can be answered with "I bought it about 6 months ago." Chat is a simulation, not a messaging feature.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 893:7  main.<fn>.<fn>
+  
+00:12 +37 -23: UAT-09b settings and data management UAT-09b.1 BLOCKER: "Reset Demo Data" destroys the real user's own purchase history without warning
+00:12 +37 -24: UAT-09b settings and data management UAT-09b.1 BLOCKER: "Reset Demo Data" destroys the real user's own purchase history without warning [E]
+  BLOCKER: "Reset Demo Data" deleted the real user's completed purchase, the winning bid and the transaction record. DatabaseHelper._deleteDemoData (database_helper.dart:431) does DELETE FROM users WHERE is_demo = 1, and every demo listing, bid, transaction, conversation and review cascades away with it. The confirmation dialog (settings_screen.dart:84-86) never mentions that the user's own data will be destroyed.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 925:7  main.<fn>.<fn>
+  
+00:12 +37 -24: UAT-09b settings and data management UAT-09b.2 DEFECT: the user's own reviews of demo sellers are wiped by Reset Demo Data
+00:13 +37 -25: UAT-09b settings and data management UAT-09b.2 DEFECT: the user's own reviews of demo sellers are wiped by Reset Demo Data [E]
+  DEFECT: the review the user wrote is gone along with the rest. Same cascade as UAT-09b.1.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 952:7  main.<fn>.<fn>
+  
+00:13 +37 -25: UAT-09b settings and data management UAT-09b.3 the real user account survives Reset Demo Data
+00:13 +38 -25: UAT-09b settings and data management UAT-09b.4 Clear All Data really clears everything and reseeds
+00:13 +39 -25: UAT-09c user profile UAT-09c.1 another member's email and phone are not exposed
+00:13 +40 -25: UAT-09c user profile UAT-09c.2 DEFECT: there is no way to edit your profile after setup
+00:13 +40 -26: UAT-09c user profile UAT-09c.2 DEFECT: there is no way to edit your profile after setup [E]
+  DEFECT: name, email, phone and parish are captured once during first-run setup and can never be changed. ProfileScreen has menu items for My Auctions, Favorites, Auction History and Settings, and no Edit Profile. UserProvider.updateProfile is dead code.
+  package:matcher                             fail
+  test/uat/uat_core_journeys_test.dart 994:7  main.<fn>.<fn>
+  
+00:13 +40 -26: UAT-09c user profile UAT-09c.3 rating is N/A until a review exists
+00:14 +41 -26: Some tests failed.

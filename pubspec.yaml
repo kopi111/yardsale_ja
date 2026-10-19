@@ -1,0 +1,68 @@
+name: yardsale_ja
+description: "YardSale JA - Jamaica's Marketplace"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.4.1
+  path: ^1.9.0
+  provider: ^6.1.2
+  image_picker: ^1.1.2
+  image_cropper: ^8.0.2
+  photo_view: ^0.15.0
+  carousel_slider: ^5.0.0
+  flutter_staggered_grid_view: ^0.7.0
+  uuid: ^4.5.1
+  intl: ^0.19.0
+  timeago: ^3.7.0
+  share_plus: ^10.1.4
+  shimmer: ^3.0.0
+  badges: ^3.1.2
+  flutter_slidable: ^3.1.1
+  path_provider: ^2.1.5
+  sqflite_common_ffi_web: ^1.1.1
+  shared_preferences: ^2.3.2
+  firebase_core: ^4.15.0
+  firebase_auth: ^6.7.0
+  cloud_firestore: ^6.10.0
+  firebase_storage: ^13.6.0
+  cloud_functions: ^6.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  sqflite_common_ffi: ^2.3.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Archivo
+      fonts:
+        - asset: assets/fonts/Archivo-400.ttf
+          weight: 400
+        - asset: assets/fonts/Archivo-500.ttf
+          weight: 500
+        - asset: assets/fonts/Archivo-600.ttf
+          weight: 600
+        - asset: assets/fonts/Archivo-700.ttf
+          weight: 700
+        - asset: assets/fonts/Archivo-800.ttf
+          weight: 800
+        - asset: assets/fonts/Archivo-900.ttf
+          weight: 900
+    - family: ArchivoExp
+      fonts:
+        - asset: assets/fonts/ArchivoExp-700.ttf
+          weight: 700
+        - asset: assets/fonts/ArchivoExp-900.ttf
+          weight: 900
